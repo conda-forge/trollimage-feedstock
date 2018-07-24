@@ -1,6 +1,6 @@
 {% set name = "trollimage" %}
-{% set version = "1.5.3" %}
-{% set sha256 = "8460e41bdf9650decdc7d59697631ef80623669605ecdcc8bb9e70371431c6d4" %}
+{% set version = "1.5.4" %}
+{% set sha256 = "467c2f7ab2ea49ce911a0e2b39190481e7a6610908bcbfd897cf1e46e7f9c13b" %}
 
 package:
   name: '{{ name|lower }}'
@@ -12,7 +12,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
