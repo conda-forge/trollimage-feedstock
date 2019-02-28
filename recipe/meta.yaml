@@ -1,6 +1,6 @@
 {% set name = "trollimage" %}
-{% set version = "1.6.3" %}
-{% set sha256 = "ffe58f9157b9a63526912912359d658549d3a8fb3b17c432de3a5cd8e30fd911" %}
+{% set version = "1.7.0" %}
+{% set sha256 = "f67ee27cb54ef91de8fb194d82a4e2ec061e892da5eab525355c546286fcc807" %}
 
 package:
   name: '{{ name|lower }}'
