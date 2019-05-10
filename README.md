@@ -1,7 +1,3 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About trollimage
 ================
 
@@ -18,8 +14,17 @@ Pytroll imaging library
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/trollimage-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/trollimage-feedstock)
+
+<table><tr>
+    
+    <td>All platforms:</td>
+    <td>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6044&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/trollimage-feedstock?branchName=master">
+      </a>
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
