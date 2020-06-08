@@ -3,7 +3,7 @@ About trollimage
 
 Home: https://github.com/pytroll/trollimage
 
-Package license: GPLv3+
+Package license: GPL-3.0-or-later
 
 Feedstock license: BSD 3-Clause
 
