@@ -5,7 +5,7 @@ Home: https://github.com/pytroll/trollimage
 
 Package license: GPL-3.0-or-later
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Pytroll imaging library
 
