@@ -1,5 +1,5 @@
 {% set name = "trollimage" %}
-{% set version = "1.15.1" %}
+{% set version = "1.16.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0c147778f52600d21ac4bf7b24da90a7139fb4f8697830bb05fb359465796a5c
+  sha256: 7495e4abb3b4016b381b28ea427482dbf2e97882d64fa3b6c223ef1e12385208
 
 build:
   noarch: python
