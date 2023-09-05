@@ -1,5 +1,5 @@
 {% set name = "trollimage" %}
-{% set version = "1.20.1" %}
+{% set version = "1.21.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,21 +7,34 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3d8589172f9ae08d1360167d6c4c034487c57b61fe0b7434148ea0ffdb831e23
+  sha256: 1331f7890b70fb7d140d3940784720148eec1e1c90e8e48f6915b17b40ea3afe
 
 build:
-  noarch: python
   number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
+  skip: true  # [py<39]
 
 requirements:
-  host:
-    - python >=3.6
+  build:
+    - python                                 # [build_platform != target_platform]
+    - cross-python_{{ target_platform }}     # [build_platform != target_platform]
+    - cython >=3                             # [build_platform != target_platform]
+    - numpy                                  # [build_platform != target_platform]
     - pip
     - setuptools
+    - versioneer
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+  host:
+    - python
+    - pip
+    - numpy
+    - cython >=3
+    - versioneer
   run:
-    - python >=3.6
-    - numpy >=1.6
+    - python
+    - numpy
+    - {{ pin_compatible('numpy') }}
     - pillow
     - xarray
     - dask
