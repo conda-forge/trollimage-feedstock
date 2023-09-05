@@ -30,10 +30,11 @@ requirements:
     - pip
     - numpy
     - cython >=3
-    - versioneer-518
+    - versioneer
   run:
     - python
-    - numpy >=1.6
+    - numpy
+    - {{ pin_compatible('numpy') }}
     - pillow
     - xarray
     - dask
