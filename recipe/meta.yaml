@@ -10,7 +10,7 @@ source:
   sha256: b19da2390ea3fff9de1bacba41f482454dc319d7b41ff4e70e84df6ebca50efe
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   skip: true  # [py<39]
 
@@ -28,6 +28,7 @@ requirements:
     - setuptools
     - versioneer
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
   host:
     - python
@@ -38,7 +39,6 @@ requirements:
   run:
     - python
     - numpy
-    - {{ pin_compatible('numpy') }}
     - pillow
     - xarray
     - dask
