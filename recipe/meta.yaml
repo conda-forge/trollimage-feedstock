@@ -1,6 +1,5 @@
 {% set name = "trollimage" %}
 {% set version = "1.27.0" %}
-{% set python_min = "3.11" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +12,7 @@ source:
 build:
   number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
-  skip: true  # [py<39]
+  skip: true  # [py<311]
 
 requirements:
   build:
