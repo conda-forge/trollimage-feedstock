@@ -1,5 +1,6 @@
 {% set name = "trollimage" %}
 {% set version = "1.27.0" %}
+{% set python_min = "3.11" %}
 
 package:
   name: {{ name|lower }}
