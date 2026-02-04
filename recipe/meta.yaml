@@ -1,5 +1,5 @@
 {% set name = "trollimage" %}
-{% set version = "1.27.0" %}
+{% set version = "1.28.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 53633b1b2fe3eea61bb5cfb1a8a85f9f9910828be59667d46e84c3c85d6c06d3
+  sha256: 84d3764d9b4949db3bed1aee8b81d21e20a058c07986597d02ab38fd90be13ab
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   skip: true  # [py<311]
 
