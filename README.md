@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/trollimage-feed
 
 Home: https://github.com/pytroll/trollimage
 
-Package license: GPL-3.0-or-later
+Package license: Apache-2.0
 
 Summary: Pytroll imaging library
 
